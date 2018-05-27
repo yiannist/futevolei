@@ -1,0 +1,82 @@
+\documentclass[a4paper,11pt]{article}
+
+%% Basics
+\usepackage[margin=2cm]{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xltxtra}
+\usepackage{xgreek}
+\setmainfont[Mapping=tex-text]{Linux Libertine O}
+
+%% Extras
+\usepackage{fancyhdr}
+\usepackage{fontawesome}
+\usepackage{tabu}
+\usepackage{titling}
+
+\pagestyle{fancy}
+\lfoot{\faInstagram/\faFacebook \texttt{Footvolley Athens}}
+\rfoot{\faEnvelopeO \texttt{info@futevolei.gr}}
+\renewcommand{\chaptername}{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\pretitle{%
+  \begin{center}
+  \LARGE
+  \includegraphics[
+    width=0.4\textwidth,
+    keepaspectratio
+  ]{../images/Footvolley-logo-cropped-reduced.pdf}\\[\bigskipamount]
+}
+\posttitle{\end{center}}
+
+\title{Footvolley Athens Premier Tournament \\ Finals}
+\date{}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{fancy}
+
+\vspace{-3cm}
+
+\section*{Quarter-finals}
+\begin{tabu} to \textwidth { | X[2,c] | X[6,c] | X[3,c] | }
+  \hline
+  \textbf{\#} & \textbf{Team A vs. Team B} & \textbf{Score} \\
+  \hline \hline
+  1/4-final & vs. & - \\ \hline
+  1/4-final & vs. & - \\ \hline
+  1/4-final & vs. & - \\ \hline
+  1/4-final & vs. & - \\ \hline
+\end{tabu}
+
+\section*{Semi-finals}
+\begin{tabu} to \textwidth { | X[2,c] | X[6,c] | X[1,c] | X[1,c] | X[1,c] | }
+  \hline
+  \textbf{\#} & \textbf{Team A vs. Team B} & \multicolumn{3}{c|}{\textbf{Score}} \\
+  \hline \hline
+  1/2-final & vs. & - & - & - \\ \hline
+  1/2-final & vs. & - & - & - \\ \hline
+  \tabuphantomline
+\end{tabu}
+
+\section*{Finals}
+\begin{tabu} to \textwidth { | X[2,c] | X[6,c] | X[1,c] | X[1,c] | X[1,c] | }
+  \hline
+  \textbf{\#} & \textbf{Team A vs. Team B} & \multicolumn{3}{c|}{\textbf{Score}} \\
+  \hline \hline
+  Champion & vs. & - & - & - \\ \hline
+  Third place & vs. & \multicolumn{3}{c|}{-} \\ \hline
+  \tabuphantomline
+\end{tabu}
+
+\vfill
+\centering
+\includegraphics[
+  width=0.25\textwidth,
+  keepaspectratio
+]{../images/trophy.png}
+
+\end{document}
